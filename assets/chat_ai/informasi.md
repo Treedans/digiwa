@@ -1,0 +1,1 @@
+file file gambar untuk chat ai 
