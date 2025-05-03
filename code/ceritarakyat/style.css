@@ -58,6 +58,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  padding-inline: 15px;
 }
 
 .back-button {
@@ -87,7 +88,7 @@ h1 {
   font-size: 32px;
   font-weight: bold;
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 0;
   color: #ffd700; /* Gold color for title */
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -96,7 +97,7 @@ h1 {
   background-color: #be7d5f;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 5px 20px;
   border-radius: 20px;
   font-weight: bold;
   margin: 10px auto;
@@ -106,7 +107,8 @@ h1 {
 }
 
 .story-container {
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  text-align: justify;
   border-radius: 15px;
   padding: 20px;
   flex: 1;
@@ -114,7 +116,7 @@ h1 {
   line-height: 1.6;
   font-size: 16px;
   margin-bottom: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 /* Scrollbar styling */
