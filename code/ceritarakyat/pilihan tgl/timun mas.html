@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membaca Cerita Rakyat - Timun Mas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-image: url(indonesia\ 3.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .back-button {
+      width: 40px;
+      height: 40px;
+      background: blue;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .content-image {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .content-image img {
+      width: 100%;
+      display: block;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .btn {
+      background-color: #c6865b;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #a86e45;
+    }
+
+    @media (max-width: 600px) {
+      .btn {
+        padding: 10px 20px;
+        font-size: 17px;
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="back-button">←</div>
+    <div>Membaca Cerita Rakyat</div>
+  </div>
+
+  <div class="content-image">
+    <img src="Group 74.png" alt="Timun Mas" />
+  </div>
+
+  <div class="buttons">
+    <button class="btn">Kembali</button>
+    <button class="btn">Lanjut</button>
+  </div>
+</body>
+</html>
