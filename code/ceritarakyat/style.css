@@ -21,7 +21,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../assets/cerita rakyat/timunmas.png");
+  background-image: url("../../assets/cerita_rakyat/timunmas.png");
   background-size: cover;
   background-position: center;
   z-index: -2;
@@ -71,9 +71,8 @@ body {
   justify-content: left;
   align-items: center;
   font-size: 16px;
-  background-image: url("../../assets/cerita rakyat/backicon.png");
+  background-image: url("../../assets/cerita_rakyat/backicon.png");
   background-size: 24px;
-  /* PUT BACK BUTTON ICON HERE */
 }
 
 h1 {
