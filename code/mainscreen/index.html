@@ -4,158 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DIGIWA - Belajar Bahasa Jawa Krama</title>
-    <style>
-      :root {
-        --brown-dark: #6a3c26;
-        --orange-light: #ffeb99;
-        --orange-dark: #f7a640;
-        --red-pink: #c8375f;
-        --sky-blue: #8dd4ff;
-        --cream-bg: #fce293;
-        --white: #ffffff;
-        --text-brown: #8d4b25;
-      }
-
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: "Arial", sans-serif;
-      }
-
-      body {
-        background: conic-gradient(from 180deg at 50% 50%, #9b6a4e, #35241b);
-        color: var(--text-brown);
-      }
-
-      .container {
-        max-width: 480px;
-        margin: auto;
-        padding: 16px;
-      }
-
-      .header {
-        background-color: var(--brown-dark);
-        color: white;
-        border-radius: 24px;
-        padding: 24px 16px;
-        text-align: center;
-        margin-bottom: 24px;
-      }
-
-      .logo {
-        margin-bottom: 12px;
-        font-weight: bold;
-        font-size: 24px;
-      }
-
-      .subtitle {
-        font-size: 14px;
-      }
-
-      .speech-box {
-        background-color: #d87b42;
-        border-radius: 24px;
-        padding: 20px;
-        margin-bottom: 24px;
-        color: white;
-      }
-
-      .speech-box .character-image {
-        /* Replace with actual image */
-        width: 60px;
-        height: 60px;
-        background-color: #000;
-        border-radius: 50%;
-        margin-bottom: 12px;
-      }
-
-      .speech-text {
-        font-size: 18px;
-        font-weight: bold;
-      }
-
-      .speech-subtext {
-        font-size: 14px;
-        margin-top: 8px;
-      }
-
-      .section-title {
-        font-size: 18px;
-        margin-bottom: 16px;
-        font-weight: bold;
-      }
-
-      .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-      }
-
-      .card {
-        flex: 1 1 calc(50% - 8px);
-        padding: 16px;
-        border-radius: 16px;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 120px;
-      }
-
-      .card img {
-        width: 32px;
-        height: 32px;
-        margin-bottom: 8px;
-      }
-
-      .card.red {
-        background-color: var(--red-pink);
-      }
-
-      .card.blue {
-        background-color: var(--sky-blue);
-        color: #000;
-      }
-
-      .card.orange {
-        background-color: var(--orange-dark);
-        flex: 1 1 100%;
-        color: white;
-      }
-
-      @media (max-width: 480px) {
-        .card {
-          flex: 1 1 100%;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <div class="logo">🟡 DIGIWA</div>
-        <div class="subtitle">Belajar Bahasa Jawa Krama</div>
-      </div>
+    <div class="main">
+      <div class="container">
+        <div class="top-container">
+          <div class="header">
+            <img src="../../assets/main_screen/header_logo.svg" alt="" />
+          </div>
+          <!-- <div class="subtitle">Belajar Bahasa Jawa Krama</div> -->
 
-      <div class="speech-box">
-        <div class="character-image">
-          <img src="../../assets/main_screen/Banner.svg" alt="" />
+          <div class="speech-box">
+            <div class="character-image">
+              <img src="../../assets/main_screen/Banner.svg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
+      <div class="bottom-container">
+        <div class="section-title">Materi Pembelajaran</div>
 
-      <div class="section-title">Materi Pembelajaran</div>
-
-      <div class="button-container">
-        <div class="aksara">
-          <img src="../../assets/main_screen/Aksara.svg" alt="" />
-        </div>
-        <div class="cerita">
-          <img src="" alt="../../assets/main_screen/Cerita.svg" />
-        </div>
-        <div class="chat-ai">
-          <img src="" alt="../../assets/main_screen/Ai.svg" />
+        <div class="button-container">
+          <div class="btn aksara">
+            <img src="../../assets/main_screen/Aksara.svg" alt="" />
+          </div>
+          <div class="btn cerita">
+            <img src="../../assets/main_screen/Cerita.svg" alt="" />
+          </div>
+          <div class="btn chat-ai">
+            <img src="../../assets/main_screen/Ai.svg" alt="" />
+          </div>
         </div>
       </div>
     </div>
