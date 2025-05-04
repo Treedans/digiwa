@@ -1,117 +1,101 @@
-/* Reset */
+:root {
+  --gold-gradient-start: #f0c15c;
+  --gold-gradient-end: #d29d39;
+  --dark-brown: #594438;
+  --button-white: #ffffff;
+  --button-text: #0d1f12;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Container setup */
-  body, html {
-    height: 100%;
-    font-family: 'Arial', sans-serif;
-    background-color: #f7c95d; /* Gold background */
-  }
-  
-  /* Layout container */
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  
-  /* Top section (yellow background) */
-  .top-section {
-    flex: 1;
-    background: linear-gradient(to bottom, #f7c95d 60%, #5d3b27 40%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 60px;
-    position: relative;
-  }
-  
-  /* Logo and text */
-  .logo-container {
-    text-align: center;
-    color: white;
-  }
-  
-  .logo-img {
-    width: 60px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  /* DIGIWA Title */
-  .app-title {
-    font-size: 36px;
-    font-weight: bold;
-    color: white;
-  }
-  
-  .app-subtitle {
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-  }
-  
-  /* Bottom sheet section */
-  .bottom-sheet {
-    background-color: #5d3b27;
-    color: white;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    padding: 32px 24px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    max-height: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Drag bar */
-  .drag-bar {
-    width: 60px;
-    height: 6px;
-    background-color: #b6895d;
-    border-radius: 3px;
-    margin-bottom: 20px;
-  }
-  
-  /* Headline */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 60rem;
+  background: linear-gradient(
+    to bottom,
+    var(--gold-gradient-start),
+    var(--gold-gradient-end) 40%,
+    var(--dark-brown) 40%
+  );
+  color: white;
+  text-align: center;
+}
+
+.top-section {
+  z-index: 0;
+  padding: 30px 20px 10px;
+}
+
+.logo-placeholder {
+  margin: 0 auto;
+  width: 250px;
+  height: 200px;
+}
+
+.logo-placeholder img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content-section {
+  z-index: 1;
+  height: 10rem;
+  margin: 4rem 0 4rem;
+  background-color: var(--dark-brown);
+  padding: 10rem 2rem 2rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.headline {
+  font-size: 1.6rem;
+  font-weight: bold;
+  /* margin-bottom: 100px; */
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #f0e7df;
+  margin-bottom: 2rem;
+}
+
+.button-placeholder {
+  background-color: var(--button-white);
+  color: var(--button-text);
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 30px;
+  width: 80%;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
   .headline {
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 16px;
+    font-size: 1.9rem;
   }
-  
-  /* Description */
   .description {
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 32px;
-    color: #ffffffcc;
+    font-size: 1.2rem;
   }
-  
-  /* Button */
-  .lanjut-btn {
-    background-color: white;
-    color: #1c1c1c;
-    padding: 14px 36px;
-    border: none;
-    border-radius: 30px;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    transition: all 0.2s ease;
+  .button-placeholder {
+    font-size: 1.4rem;
   }
-  
-  .lanjut-btn:hover {
-    background-color: #f0f0f0;
+  .logo-placeholder {
+    width: 360px;
   }
-  
+}
