@@ -18,59 +18,59 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        padding: 40px;
         background-image: url("../../../assets/cerita_rakyat/indonesia4.png");
       }
 
       .top-bar {
+        padding: 40px auto;
+        position: relative;
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        max-width: 335px;
+        text-align: center;
         margin-bottom: 20px;
       }
 
       .back-button {
-        width: 40px;
-        height: 40px;
-        background-color: white;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        background-image: url("../../../assets/cerita_rakyat/backicon.png");
+        background-size: cover;
+        background-repeat: no-repeat;
       }
 
       .title {
-        font-size: 18px;
-        font-weight: bold;
+        font-size: 16px;
+        font-weight: 600;
         color: white;
       }
 
       .card {
-        background: #f8c15c;
-        background-image: url(../../../assets/cerita_rakyat/Container.png);
-        /* background-size: 335px 409px; */
+        background-image: url("../../../assets/cerita_rakyat/Container.png");
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        border: 4px solid #a66438;
-        border-radius: 30px;
-        padding: 40px 20px;
+        /* border: 4px solid #a66438; */
+        /* border-radius: 30px; */
+        padding: 60px 40px 40px;
         text-align: center;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        max-width: 335px;
-        max-height: 409px;
+        width: 335px;
+        height: 409px;
       }
 
       .aksara-image {
-        font-size: 100px;
-        color: black;
-        font-weight: bold;
-        margin-bottom: 20px;
+        max-width: 214px; /* You can tweak this value to match the prototype */
+        max-height: 188px;
+        display: block;
+        margin: 20px auto 40px;
       }
 
       .aksara-label {
+        margin: 20px auto;
         font-size: 24px;
         color: #5c3b2b;
         font-weight: bold;
@@ -78,22 +78,26 @@
 
       @media (min-width: 600px) {
         .card {
-          width: 400px;
+          width: 335px;
         }
       }
     </style>
   </head>
   <body>
     <div class="top-bar">
-      <div class="back-button">
-        <img src="../../../assets/cerita_rakyat/backicon.png" alt="" />
-      </div>
+      <div class="back-button"></div>
       <div class="title">Menulis Aksara Jawa</div>
     </div>
 
     <div class="card">
-      <div class="aksara-image">ꦲ</div>
-      <h3 class="label">Ha</h3>
+      <div>
+        <img
+          class="aksara-image"
+          src="../../../assets/aksara/panel/imgha.png"
+          alt=""
+        />
+      </div>
+      <h3 class="aksara-label">Ha</h3>
     </div>
   </body>
 </html>
